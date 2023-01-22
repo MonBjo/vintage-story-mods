@@ -1,0 +1,13 @@
+{
+    "type": "content",
+    "modid": "creativemdexamplemod",
+    "name": "My Example Content Mod",
+    "description" : "This is an example mod, which does nothing",
+    "authors": ["CoffeeTails"],
+    "side": "Universal",
+    "version": "1.0",
+    "dependencies": { 
+      "game": ""
+    },
+    "website": "https://github.com/MonBjo/vintage-story-mods"
+  }
