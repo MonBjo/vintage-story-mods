@@ -1,0 +1,65 @@
+﻿
+{
+  "code": "humanoid-trader-admin",
+  "class": "ItemCreature",
+  "maxstacksize": 64,
+  "variantgroups": [
+    {
+      "code": "EntityTrader",
+      "states": [ "humanoid-trader-admin" ]
+    }
+  ],
+  "shape": {
+    "base": "game:shapes/entity/humanoid/trader"
+  },
+  "texture": { "base": "game:textures/entity/humanoid/trader" },
+  "creativeinventory": {
+    "general": [ "*" ],
+    "creatures": [ "*" ]
+  },
+  "materialDensity": 600,
+  "guiTransform": {
+    "rotation": {
+      "x": 0,
+      "y": -90,
+      "z": -180
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.15,
+      "z": 0.5
+    },
+    "scale": 1
+  },
+  "fpHandTransform": {
+    "rotation": {
+      "x": 0,
+      "y": 00,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.15,
+      "z": 0.5
+    },
+    "scale": 1
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0.15,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -90,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.15,
+      "z": 0.5
+    },
+    "scale": 6
+  }
+}

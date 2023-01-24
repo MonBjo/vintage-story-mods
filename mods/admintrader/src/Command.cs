@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
-using Vintagestory.GameContent;
 
 namespace admintrader.src {
     public class Command : ModSystem {
@@ -19,6 +18,7 @@ namespace admintrader.src {
         // Register command
         public override void StartServerSide(ICoreServerAPI api) {
             base.StartServerSide(api);
+
             AssetLocation sound = new AssetLocation("here", "sounds/partyhorn"); // Create sound location
             api.RegisterCommand("here", "spawns particles around the player", "",
                 (IServerPlayer player, int groupId, CmdArgs args) => {

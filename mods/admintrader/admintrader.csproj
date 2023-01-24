@@ -65,13 +65,14 @@
     <Content Include="modinfo.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\AdminTrader.cs" />
     <Compile Include="src\Command.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="assets\entity\admintrader.json" />
-    <None Include="assets\entity\lang\en.json" />
-    <None Include="assets\itemtypes\admintrader.json" />
+    <None Include="assets\survival\entity\humanoid-trader-admin.json" />
+    <None Include="assets\survival\entity\lang\en.json" />
+    <None Include="assets\survival\itemtypes\admintrader.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -6,10 +6,10 @@
 	deadHitboxSize: { x: 0.75, y: 0.5 },
 	client: {
 		renderer: "Shape",
-		shape: { base: "entity/humanoid/trader" },
-		texture: { base: "entity/humanoid/trader", alternates: [ { base: "entity/humanoid/traderclothes/set1" }, { base: "entity/humanoid/traderclothes/set2" },
-                                                             { base: "entity/humanoid/traderclothes/set3" }, { base: "entity/humanoid/traderclothes/set4" },
-                                                             { base: "entity/humanoid/traderclothes/set5" }  ] },
+		shape: { base: "game:entity/humanoid/trader" },
+		texture: { base: "game:entity/humanoid/trader", alternates: [ { base: "game:entity/humanoid/traderclothes/set1" }, { base: "game:entity/humanoid/traderclothes/set2" },
+                                                             { base: "game:entity/humanoid/traderclothes/set3" }, { base: "game:entity/humanoid/traderclothes/set4" },
+                                                             { base: "game:entity/humanoid/traderclothes/set5" }  ] },
 		behaviors: [
 			{ code: "nametag", "showtagonlywhentargeted": true },
 			{ code: "repulseagents" },
