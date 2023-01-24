@@ -1,0 +1,9 @@
+﻿{
+  code: "humanoid-trader-admin",
+  creativeinventory: {
+    "general": ["*"]
+  },
+  texture: {
+    base: "game:textures/entity/humanoid/trader"
+  }
+}

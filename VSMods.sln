@@ -4,13 +4,13 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSModLauncher", "VSModLauncher.csproj", "{203DFBF1-3599-43FD-8487-E1C79C2B788F}"
 	ProjectSection(ProjectDependencies) = postProject
-		{ba219778-5d3a-40fc-afc1-73daf96104bf} = {ba219778-5d3a-40fc-afc1-73daf96104bf}
-		{e838118e-4a02-4b0d-a3ea-259643b428fc} = {e838118e-4a02-4b0d-a3ea-259643b428fc}
+		{BA219778-5D3A-40FC-AFC1-73DAF96104BF} = {BA219778-5D3A-40FC-AFC1-73DAF96104BF}
+		{E838118E-4A02-4B0D-A3EA-259643B428FC} = {E838118E-4A02-4B0D-A3EA-259643B428FC}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admintrader", "mods\admintrader\admintrader.csproj", "{ba219778-5d3a-40fc-afc1-73daf96104bf}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admintrader", "mods\admintrader\admintrader.csproj", "{BA219778-5D3A-40FC-AFC1-73DAF96104BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adminbook", "mods\adminbook\adminbook.csproj", "{e838118e-4a02-4b0d-a3ea-259643b428fc}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adminbook", "mods\adminbook\adminbook.csproj", "{E838118E-4A02-4B0D-A3EA-259643B428FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,18 +25,18 @@ Global
 		{203DFBF1-3599-43FD-8487-E1C79C2B788F}.Release x64|Any CPU.Build.0 = Release|Any CPU
 		{203DFBF1-3599-43FD-8487-E1C79C2B788F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{203DFBF1-3599-43FD-8487-E1C79C2B788F}.Release|Any CPU.Build.0 = Release|Any CPU
-{e838118e-4a02-4b0d-a3ea-259643b428fc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{e838118e-4a02-4b0d-a3ea-259643b428fc}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{e838118e-4a02-4b0d-a3ea-259643b428fc}.Release x64|Any CPU.ActiveCfg = Release|Any CPU
-{e838118e-4a02-4b0d-a3ea-259643b428fc}.Release x64|Any CPU.Build.0 = Release|Any CPU
-{e838118e-4a02-4b0d-a3ea-259643b428fc}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{e838118e-4a02-4b0d-a3ea-259643b428fc}.Release|Any CPU.Build.0 = Release|Any CPU}
-{ba219778-5d3a-40fc-afc1-73daf96104bf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{ba219778-5d3a-40fc-afc1-73daf96104bf}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{ba219778-5d3a-40fc-afc1-73daf96104bf}.Release x64|Any CPU.ActiveCfg = Release|Any CPU
-{ba219778-5d3a-40fc-afc1-73daf96104bf}.Release x64|Any CPU.Build.0 = Release|Any CPU
-{ba219778-5d3a-40fc-afc1-73daf96104bf}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{ba219778-5d3a-40fc-afc1-73daf96104bf}.Release|Any CPU.Build.0 = Release|Any CPU}
+		{BA219778-5D3A-40FC-AFC1-73DAF96104BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA219778-5D3A-40FC-AFC1-73DAF96104BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA219778-5D3A-40FC-AFC1-73DAF96104BF}.Release x64|Any CPU.ActiveCfg = Release|Any CPU
+		{BA219778-5D3A-40FC-AFC1-73DAF96104BF}.Release x64|Any CPU.Build.0 = Release|Any CPU
+		{BA219778-5D3A-40FC-AFC1-73DAF96104BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA219778-5D3A-40FC-AFC1-73DAF96104BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E838118E-4A02-4B0D-A3EA-259643B428FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E838118E-4A02-4B0D-A3EA-259643B428FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E838118E-4A02-4B0D-A3EA-259643B428FC}.Release x64|Any CPU.ActiveCfg = Release|Any CPU
+		{E838118E-4A02-4B0D-A3EA-259643B428FC}.Release x64|Any CPU.Build.0 = Release|Any CPU
+		{E838118E-4A02-4B0D-A3EA-259643B428FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E838118E-4A02-4B0D-A3EA-259643B428FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
