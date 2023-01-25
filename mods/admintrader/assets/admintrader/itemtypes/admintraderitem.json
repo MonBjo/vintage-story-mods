@@ -1,11 +1,11 @@
 ﻿
 {
-  "code": "trader-admin-item",
-  "class": "EntityTrader",
+  "code": "creature",
+  "class": "ItemCreature",
   "maxstacksize": 64,
   "variantgroups": [
     {
-      "code": "EntityTrader",
+      "code": "type",
       "states": [ "trader-admin" ]
     }
   ],
@@ -34,15 +34,15 @@
   "fpHandTransform": {
     "rotation": {
       "x": -30,
-      "y": 00,
+      "y": 90,
       "z": 0
     },
     "origin": {
       "x": 0.5,
-      "y": 0.25,
+      "y": 0,
       "z": 0.5
     },
-    "scale": 2
+    "scale": 1
   },
   "groundTransform": {
     "translation": {
@@ -51,7 +51,7 @@
       "z": 0
     },
     "rotation": {
-      "x": 0,
+      "x": 90,
       "y": -90,
       "z": 0
     },
@@ -60,6 +60,6 @@
       "y": 0.15,
       "z": 0.5
     },
-    "scale": 5
+    "scale": 3
   }
 }
