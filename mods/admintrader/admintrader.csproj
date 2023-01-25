@@ -70,9 +70,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="assets\survival\entity\admintraderentity.json" />
-    <None Include="assets\survival\entity\lang\en.json" />
-    <None Include="assets\survival\itemtypes\admintraderitem.json" />
+    <None Include="assets\admintrader\entities\humanoid\trader-admin.json" />
+    <None Include="assets\admintrader\entities\humanoid\lang\en.json" />
+    <None Include="assets\admintrader\itemtypes\admintraderitem.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

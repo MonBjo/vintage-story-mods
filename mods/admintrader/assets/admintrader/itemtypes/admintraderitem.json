@@ -1,12 +1,12 @@
 ﻿
 {
-  "code": "humanoid-trader-admin",
-  "class": "ItemCreature",
+  "code": "trader-admin-item",
+  "class": "EntityTrader",
   "maxstacksize": 64,
   "variantgroups": [
     {
       "code": "EntityTrader",
-      "states": [ "humanoid-trader-admin" ]
+      "states": [ "trader-admin" ]
     }
   ],
   "shape": {
