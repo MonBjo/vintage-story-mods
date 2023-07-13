@@ -70,10 +70,12 @@
     <Compile Include="src\RedirectLogs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\adminbook\shapes\item\lore\trader-admin.json" />
     <None Include="assets\adminbook\lang\en.json" />
     <None Include="assets\adminbook\itemtypes\adminbookitem.json" />
-    <None Include="assets\adminbook\textures\item\icon.png"/>
+    <None Include="assets\adminbook\textures\item\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\adminbook\shapes\item\lore\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

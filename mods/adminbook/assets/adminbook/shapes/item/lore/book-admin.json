@@ -50,9 +50,9 @@
 							"faces": {
 								"north": { "texture": "#book", "uv": [ 0.0, 15.5, 5.0, 16.0 ] },
 								"east": { "texture": "#book", "uv": [ 5.0, 15.5, 13.0, 16.0 ] },
-								"south": { "texture": "#book", "uv": [ 15.0, 3.0, 15.5, 8.0 ], "rotation": 90 },
+								"south": { "texture": "#book", "uv": [ 15.0, 3.0, 15.5, 8.0 ], "glow": 228, "rotation": 90 },
 								"west": { "texture": "#book", "uv": [ 0.0, 0.0, 8.0, 0.5 ], "enabled": false },
-								"up": { "texture": "#book", "uv": [ 0.0, 7.5, 5.0, 15.5 ] },
+								"up": { "texture": "#book", "uv": [ 0.0, 7.5, 5.0, 15.5 ], "glow": 228 },
 								"down": { "texture": "#book", "uv": [ 5.0, 7.5, 10.0, 15.5 ] }
 							}
 						},

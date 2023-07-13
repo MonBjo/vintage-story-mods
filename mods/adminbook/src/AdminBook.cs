@@ -19,10 +19,11 @@ namespace adminbook.src {
 		}
 	}
 
-	class AdminBookItem : ItemBook {
+	class AdminBookItem : ModSystemEditableBook {
 
         // public void Transcribe(IPlayer player, string pageText, string bookTitle, int pageNumber, ItemSlot bookSlot) {
         public void Transcribe(IPlayer player, ItemSlot bookSlot) {
+            /*
 
             string pageText = "i mean aged firewood is better than fresh ones right\r\nand they wont work in normal firewood recipes\r\nso they would be exclusive as a fuel only";
             string bookTitle = "Firewood";
@@ -48,7 +49,6 @@ namespace adminbook.src {
             paperStack.Attributes.SetString("signedby", bookSlot.Itemstack.Attributes.GetString("signedby"));
             paperStack.Attributes.SetString("signedbyuid", bookSlot.Itemstack.Attributes.GetString("signedbyuid"));
             paperStack.Attributes.SetString("transcribedby", transcribedby);
-            /*
             paperStack.Attributes.SetString("transcribedbyuid", player.PlayerUID);
             
             paperStack.Attributes.SetString("text", pageText);
