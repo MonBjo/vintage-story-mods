@@ -9,57 +9,69 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
+using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 
-namespace adminbook.src {
-	class AdminBookMod : ModSystem {
-		public override void Start(ICoreAPI api) {
+namespace adminbook.src 
+{
+	class AdminBookMod : ModSystem 
+    {
+		public override void Start(ICoreAPI api) 
+        {
 			base.Start(api);
 			api.RegisterItemClass("adminbook", typeof(AdminBookItem));
 		}
 	}
 
-	class AdminBookItem : ModSystemEditableBook {
+	class AdminBookItem : ItemBook 
+    {
+		// Some code here maybe?
+        // TODO: Create a player friendly command to get an adminbook
+        // TODO: Make sure the book can't be used as fuel! 
+        // TODO: figure out how to populate the '/help adminbook' command
+	}
 
-        // public void Transcribe(IPlayer player, string pageText, string bookTitle, int pageNumber, ItemSlot bookSlot) {
-        public void Transcribe(IPlayer player, ItemSlot bookSlot) {
-            /*
-
-            string pageText = "i mean aged firewood is better than fresh ones right\r\nand they wont work in normal firewood recipes\r\nso they would be exclusive as a fuel only";
-            string bookTitle = "Firewood";
-            string transcribedby = "God";
-            int pageNumber = 2;
-
-            ItemSlot matSlot = null;
-            player.Entity.WalkInventory((slot) => {
-                if(slot.Empty) return true;
-                if(slot.Itemstack.Collectible.Attributes?["canTranscribeOn"].AsBool(false) == true && !slot.Itemstack.Attributes.HasAttribute("text"))
-                {
-                    matSlot = slot;
-                    return false;
-                }
-
-                return true;
-            });
-
-            var paperStack = matSlot.TakeOut(1);
-            paperStack.Attributes.SetString("text", pageText);
-            paperStack.Attributes.SetString("title", bookTitle);
-            paperStack.Attributes.SetInt("pageNumber", pageNumber);
-            paperStack.Attributes.SetString("signedby", bookSlot.Itemstack.Attributes.GetString("signedby"));
-            paperStack.Attributes.SetString("signedbyuid", bookSlot.Itemstack.Attributes.GetString("signedbyuid"));
-            paperStack.Attributes.SetString("transcribedby", transcribedby);
-            paperStack.Attributes.SetString("transcribedbyuid", player.PlayerUID);
-            
-            paperStack.Attributes.SetString("text", pageText);
-            paperStack.Attributes.SetString("title", bookTitle);
-            paperStack.Attributes.SetInt("pageNumber", pageNumber);
-            paperStack.Attributes.SetString("signedby", bookSlot.Itemstack.Attributes.GetString("signedby"));
-            paperStack.Attributes.SetString("signedbyuid", bookSlot.Itemstack.Attributes.GetString("signedbyuid"));
-            paperStack.Attributes.SetString("transcribedby", player.PlayerName);
-            paperStack.Attributes.SetString("transcribedbyuid", player.PlayerUID);
-             */
+    public class Command : ModSystem 
+    {
+        public override bool ShouldLoad(EnumAppSide side) 
+        {
+            return side == EnumAppSide.Server;
         }
 
-	}
+        public override void StartServerSide(ICoreServerAPI api) 
+        {
+            base.StartServerSide(api);
+            string command = "adminbook";
+            string description = "edit the adminbook";
+
+            api.RegisterCommand(command, description, "[edit|give]", adminBookCmd, Privilege.commandplayer);
+        }
+
+        private void adminBookCmd(IServerPlayer player, int groupId, CmdArgs args) 
+        {
+            string firstArgument = args.PopWord();
+            string secondArgument = args.PopWord();
+            if(firstArgument == "edit")
+            {
+                player.SendMessage(groupId, "Edit the adminbook", EnumChatType.Notification);
+
+
+            } 
+            else if(firstArgument == "give")
+            {
+                if(secondArgument == null)
+                {
+                    player.SendMessage(groupId, "Give one adminbook to yourself" + secondArgument, EnumChatType.Notification);
+                }
+                else
+                {
+                    player.SendMessage(groupId, "Give one adminbook to " + secondArgument, EnumChatType.Notification);
+                }
+            } 
+            else
+            {
+                player.SendMessage(groupId, "Info about the adminbook \n will this create a new line?", EnumChatType.Notification);
+            }
+        }
+    }
 }
