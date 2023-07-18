@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
+using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
@@ -49,12 +50,18 @@ namespace adminbook.src
 
         private void adminBookCmd(IServerPlayer player, int groupId, CmdArgs args) 
         {
+            //ItemStack adminbookItem = new ItemStack(3042, ItemBooks, 1, TreeAttribute stackAttributes, IWorldAccessor resolver);
+            ItemStack adminbookItem = new ItemStack();
+
             string firstArgument = args.PopWord();
             string secondArgument = args.PopWord();
+            int maxPageCount = 10;
+            
+
             if(firstArgument == "edit")
             {
                 player.SendMessage(groupId, "Edit the adminbook", EnumChatType.Notification);
-
+                // var dlg = new GuiDialogEditableBook(adminbookItem, api as ICoreClientAPI, maxPageCount);
 
             } 
             else if(firstArgument == "give")
@@ -62,15 +69,18 @@ namespace adminbook.src
                 if(secondArgument == null)
                 {
                     player.SendMessage(groupId, "Give one adminbook to yourself" + secondArgument, EnumChatType.Notification);
+                    // TODO: Give a adminbook to yourself
                 }
                 else
                 {
                     player.SendMessage(groupId, "Give one adminbook to " + secondArgument, EnumChatType.Notification);
+                    // TODO: Give a adminbook to targeted player
                 }
             } 
             else
             {
                 player.SendMessage(groupId, "Info about the adminbook \n will this create a new line?", EnumChatType.Notification);
+                // TODO: Write some info about the mod / commands
             }
         }
     }
