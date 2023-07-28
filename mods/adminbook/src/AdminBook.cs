@@ -32,16 +32,12 @@ namespace adminbook.src
         public override void StartServerSide(ICoreServerAPI api) 
         {
             base.StartServerSide(api);
-            //string command = "adminbook";
-            //string description = "edit the adminbook";
-
-            //api.RegisterCommand(command, description, "[edit|give]", adminBookCmd, Privilege.commandplayer);
 
             var parsers = api.ChatCommands.Parsers;
             api.ChatCommands.Create("adminbook")
             .WithAlias("ab")
-            .RequiresPrivilege(Privilege.commandplayer)
             .BeginSubCommand("edit")
+                .RequiresPrivilege(Privilege.commandplayer)
                 .WithDescription("Edit the adminbook")
                 .HandleWith(adminBookEdit)
             .EndSubCommand()
@@ -51,6 +47,7 @@ namespace adminbook.src
                 .HandleWith(adminBookGet)
             .EndSubCommand()
             .BeginSubCommand("give")
+                .RequiresPrivilege(Privilege.commandplayer)
                 .WithDescription("Give the adminbook to a player")
                 .WithArgs(parsers.Word("player name"))
                 .HandleWith(adminBookGive)
@@ -64,9 +61,7 @@ namespace adminbook.src
 
         private TextCommandResult adminBookGive(TextCommandCallingArgs args)
         {
-            // if args matches player, give book
-            
-            return TextCommandResult.Success("Command to give an admin book");
+            return TextCommandResult.Success("Command to get an admin book");
         }
 
         private TextCommandResult adminBookGet(TextCommandCallingArgs args)
